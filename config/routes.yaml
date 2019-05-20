@@ -1,0 +1,13 @@
+index:
+    path: /{vueRouting}
+    requirements:
+        vueRouting: '^(?!anagrams|gifs|_(profiler|wdt)).*'
+    controller: App\Controller\WordController::index
+
+anagrams:
+    path: /anagrams/{word}
+    controller: App\Controller\WordController::anagrams
+
+gifs:
+    path: /gifs/{word}/rating/{rating}
+    controller: App\Controller\GiphyController::gifs
