@@ -20,7 +20,7 @@ present in .env.local as well.
     ./bin/console doctrine:database:create
     ./bin/console doctrine:migrations:migrate
     ./bin/console doctrine:fixtures:load
-    ./bin/console server:start
+    ./bin/console server:run &
     ./node_modules/.bin/encore dev-server --hot
 ```
 
